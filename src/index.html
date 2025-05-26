@@ -5,48 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-MDvj+z4+Ex/1Qx2RpqOB+oRImI5W8rZd7lyDdbFq51I0spEgUeQyR5VjNU9gRoHkDLhL69+EhDsXbJ3uyX2z/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Navbar & Hero Merged Up -->
     <!-- Hero Section Starts -->
     <div class="bg-[#1d612f] py-5">
-      <!-- navbbar starts -->
+      <!-- Navbar -->
       <nav>
         <div
-          class="flex justify-between items-center w-3/4 m-auto py-3 bg-white rounded-full px-3"
+          class="flex flex-wrap justify-between items-center max-w-7xl mx-3 md:mx-auto py-3 px-4 bg-white rounded-full"
         >
-          <img src="../img/logo.png" alt="" />
+          <img src="../img/logo.png" alt="Logo" class="w-28" />
 
-          <ul class="flex justify-between gap-5">
+          <ul class="hidden md:flex justify-between gap-5">
             <li>
-              <a href="#" class="text-[#1A1A1A] font-semibold text-[18px]">
-                About Us</a
+              <a href="#" class="text-[#1A1A1A] font-semibold text-[18px]"
+                >About Us</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#1A1A1A] font-semibold text-[18px]">
-                Services</a
+              <a href="#" class="text-[#1A1A1A] font-semibold text-[18px]"
+                >Services</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#1A1A1A] font-semibold text-[18px]">
-                Past Work</a
+              <a href="#" class="text-[#1A1A1A] font-semibold text-[18px]"
+                >Past Work</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#1A1A1A] font-semibold text-[18px]">
-                Reviews</a
+              <a href="#" class="text-[#1A1A1A] font-semibold text-[18px]"
+                >Reviews</a
               >
             </li>
           </ul>
 
-          <button class="bg-[#0B5D1E] text-white px-4 py-3 rounded-full">
+          <button
+            class="bg-[#0B5D1E] text-white px-4 py-2 rounded-full text-sm md:text-base mt-3 md:mt-0"
+          >
             Get Free Quote
           </button>
         </div>
       </nav>
+
+      <!-- Hero Area -->
+      <div
+        class="heroArea flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto px-4 my-8 gap-8"
+      >
+        <!-- Left Content -->
+        <div class="leftdiv flex flex-col gap-7 w-full lg:w-1/2">
+          <h1 class="text-white text-4xl sm:text-5xl font-bold leading-tight">
+            Reliable HVAC for <br />Every Season
+          </h1>
+
+          <div class="space-y-2">
+            <a
+              href="#"
+              class="flex items-center gap-2 text-white text-sm sm:text-base"
+            >
+              <img src="../img/checkmark-badge-01.png" alt="" class="w-5 h-5" />
+              Certified & Experienced Technicians
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-2 text-white text-sm sm:text-base"
+            >
+              <img src="../img/alarm-clock.png" alt="" class="w-5 h-5" />
+              Fast, Reliable Service
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-2 text-white text-sm sm:text-base"
+            >
+              <img src="../img/hot-price.png" alt="" class="w-5 h-5" />
+              Transparent, Affordable Pricing
+            </a>
+          </div>
+
+          <!-- Form -->
+          <div class="bg-white w-full max-w-md rounded-2xl py-4 px-4">
+            <div class="flex flex-col sm:flex-row gap-3 mb-3">
+              <input
+                type="text"
+                placeholder="Name"
+                class="flex-1 bg-white px-3 py-2 rounded border border-green-800 outline-none"
+              />
+              <input
+                type="text"
+                placeholder="Phone"
+                class="flex-1 bg-white px-3 py-2 rounded border border-green-800 outline-none"
+              />
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <input
+                type="text"
+                placeholder="Service"
+                class="flex-1 bg-white px-3 py-2 rounded border border-green-800 outline-none"
+              />
+              <button
+                type="submit"
+                class="bg-[#0B5D1E] text-white text-center px-6 py-2 rounded font-semibold"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+
+          <!-- Certification Badge -->
+          <div>
+            <img
+              class="w-full max-w-xs sm:max-w-sm h-auto"
+              src="../img/Certified Installer.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="rightdiv w-full lg:w-1/2">
+          <img
+            class="w-full h-auto"
+            src="../img/hero content right.png"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
-    <!-- navbbar ends -->
     <!-- Hero Section Ends -->
   </body>
 </html>
